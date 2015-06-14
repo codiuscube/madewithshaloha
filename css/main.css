@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* COLOR VARIABLES */
+/* TYPOGRAPHY */
+body {
+  font-size: 20px;
+  line-height: 1.75;
+  color: #dark-grey;
+  font-family: georgia, serif;
+  background: #dcfeff; }
+  body .header-bar {
+    height: 120px;
+    width: 100%;
+    background: #dcfeff; }
+    body .header-bar nav a.logo {
+      float: left; }
+    body .header-bar nav a.donate {
+      float: right; }
+  body .hero {
+    background: #6fde89; }
+    body .hero svg#Layer_1 {
+      width: 480px;
+      display: block;
+      margin: 0 auto;
+      fill: #fff; }

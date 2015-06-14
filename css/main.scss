@@ -4,10 +4,58 @@
    Author's custom styles
    ========================================================================== */
 
+/* COLOR VARIABLES */
+$green: #6fde89;
+$dark-grey: #151515;
+$light-blue: #dcfeff;
+
+
+
+/* TYPOGRAPHY */
+body {
+	font-size: 20px;
+	line-height: 1.75;
+	color: #dark-grey;
+	font-family: georgia, serif;
+	background: $light-blue;
+
+	.header-bar {
+		height: 120px;
+		width: 100%;
+		background: $light-blue;
+
+		nav {
+			a.logo {
+				float: left;
+			}
+			a.donate {
+				float: right;
+			}
+		}
+	}
+
+	.hero {
+		background: $green;
+		
+		svg#Layer_1 {
+			width: 480px;
+			display: block;
+			margin: 0 auto;
+			fill: #fff;
+		}
+
+
+
+	}
 
 
 
 
+
+
+
+
+}
 
 
 
