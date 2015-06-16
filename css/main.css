@@ -7,20 +7,95 @@ body {
   font-size: 20px;
   line-height: 1.75;
   color: #dark-grey;
-  font-family: georgia, serif;
-  background: #dcfeff; }
+  font-family: 'Crimson Text', serif;
+  font-weight: "500";
+  background: #dcfeff;
+  text-align: center; }
+  body h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 100px; }
+  body .donate {
+    background: #6fde89;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin: 50px auto 100px auto;
+    display: block;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 16px; }
   body .header-bar {
-    height: 120px;
+    height: 100px;
     width: 100%;
     background: #dcfeff; }
     body .header-bar nav a.logo {
-      float: left; }
-    body .header-bar nav a.donate {
+      float: left;
+      background: none;
+      color: #6fde89;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      padding-top: 33px;
+      text-transform: uppercase; }
+    body .header-bar nav a.donate-text {
+      background: none;
+      color: #151515;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding-top: 35px;
       float: right; }
   body .hero {
-    background: #6fde89; }
-    body .hero svg#Layer_1 {
+    background: #6fde89;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #6fde89 0%, #62c479 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #6fde89), color-stop(100%, #62c479));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #6fde89 0%, #62c479 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #6fde89 0%, #62c479 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #6fde89 0%, #62c479 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #6fde89 0%, #62c479 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    color: white; }
+    body .hero .donate {
+      background: rgba(21, 21, 21, 0.05); }
+    body .hero a:link {
+      text-decoration: none; }
+    body .hero a:visited {
+      text-decoration: none; }
+    body .hero a:hover {
+      text-decoration: none;
+      background: rgba(21, 21, 21, 0.08); }
+    body .hero .shaka {
       width: 480px;
       display: block;
-      margin: 0 auto;
-      fill: #fff; }
+      margin: 100px auto;
+      fill: white; }
+  body .footer-image {
+    background-image: url("/img/johnson-shaloha.jpg");
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    display: block;
+    height: 700px; }
+  body a:link {
+    text-decoration: none; }
+  body a:visited {
+    text-decoration: none; }
+  body a:hover {
+    text-decoration: none;
+    background: rgba(111, 222, 137, 0.9); }

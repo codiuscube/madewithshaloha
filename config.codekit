@@ -74,6 +74,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/img\/johnson-shaloha.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 661556,
+		"inputAbbreviatedPath": "\/img\/johnson-shaloha.jpg",
+		"outputAbbreviatedPath": "\/img\/johnson-shaloha.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
