@@ -12,6 +12,17 @@ $light-blue: #dcfeff;
 
 
 /* TYPOGRAPHY */
+a:link {
+	text-decoration: none; 
+	}		
+a:visited {
+	text-decoration: none; 
+	}
+a:hover {
+	text-decoration: none;
+	background: rgba($green,.9); 
+	}
+
 body {
 	font-size: 20px;
 	line-height: 1.75;
@@ -27,7 +38,6 @@ body {
 			font-size: 18px;
 			margin-top: 100px;
 		}
-
 
 	.donate {
 		background: $green;
@@ -94,33 +104,45 @@ body {
 			width: 480px;
 			display: block;
 			margin: 100px auto;
-			fill: white;
 		}
 	}
 
 
 
-	.footer-image {
-		background-image: url("/img/johnson-shaloha.jpg");
-  		background-position-y: 100%;
-  		background-size: cover;
-  		background-repeat-x: no-repeat;
-  		background-repeat-y: no-repeat;
-  		background-attachment: initial;
-  		background-origin: initial;
-  		background-clip: initial;
-  		background-color: initial;
-  		display: block;
-  		height: 700px;
+	.content {
+		background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
+  		background-size: contain;
+  		padding-bottom: 400px;
 		}
 
-	a:link {
-		text-decoration: none; }		
-	a:visited {
-		text-decoration: none; }
-	a:hover {
-		text-decoration: none;
-		background: rgba($green,.9); }
+
+	footer {
+		ul {
+			li {
+				display: inline-block;
+				padding-left: 15px;
+				margin: 0px 10px;
+				position: relative;
+				&:before {
+					content: "";
+					height: 4px;
+					width: 4px;
+					background: $dark-grey;
+					border-radius: 2px;
+					position: absolute;
+					left: -6px;
+					top: 16px;
+				}
+				&:first-child {
+					&:before {
+						content: none;
+						
+					}
+				}
+				
+			}
+		}
+	}
 		
 
 
