@@ -2,6 +2,12 @@
    Author's custom styles
    ========================================================================== */
 /* COLOR VARIABLES */
+/* MEDIA QUERIES 
+@media (min-width: @screen-sm-min) {
+	.header-bar {
+		height: 0px;
+	}
+} */
 /* TYPOGRAPHY */
 a:link {
   text-decoration: none; }
@@ -17,26 +23,18 @@ body {
   font-size: 20px;
   line-height: 1.75;
   color: #dark-grey;
-  font-family: 'Crimson Text', serif;
-  font-weight: "500";
+  font-family: "minion-pro", 'Crimson Text', serif;
+  font-weight: "600";
   background: #dcfeff;
-  text-align: center; }
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 0px; }
   body h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin-top: 100px; }
-  body .donate {
-    background: #6fde89;
-    padding: 20px 20px;
-    border-radius: 8px;
-    margin: 50px auto 100px auto;
-    display: block;
-    width: 300px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 16px; }
+    margin-top: 100px;
+    -webkit-font-smoothing: antialiased; }
   body .header-bar {
     height: 100px;
     width: 100%;
@@ -45,19 +43,33 @@ body {
       float: left;
       background: none;
       color: #6fde89;
-      font-family: 'Roboto', sans-serif;
+      font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 18px;
       padding-top: 33px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased; }
     body .header-bar nav a.donate-text {
       background: none;
       color: #151515;
-      font-family: 'Roboto', sans-serif;
+      font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 16px;
       padding-top: 35px;
-      float: right; }
+      float: right;
+      -webkit-font-smoothing: antialiased; }
+  body .donate {
+    background: #6fde89;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin: 50px auto 100px auto;
+    display: block;
+    width: 300px;
+    font-family: "myriad-pro", 'Roboto', sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 16px; }
   body .hero {
     background: #6fde89;
     /* Old browsers */
@@ -86,26 +98,36 @@ body {
       text-decoration: none;
       background: rgba(21, 21, 21, 0.08); }
     body .hero .shaka {
-      width: 480px;
+      width: 90%;
+      max-width: 480px;
       display: block;
       margin: 100px auto; }
   body .content {
     background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
     background-size: contain;
     padding-bottom: 400px; }
-  body footer ul li {
-    display: inline-block;
-    padding-left: 15px;
-    margin: 0px 10px;
-    position: relative; }
-    body footer ul li:before {
-      content: "";
-      height: 4px;
-      width: 4px;
-      background: #151515;
-      border-radius: 2px;
-      position: absolute;
-      left: -6px;
-      top: 16px; }
-    body footer ul li:first-child:before {
-      content: none; }
+  body footer {
+    background: #151515;
+    height: 100px;
+    width: 100%; }
+    body footer ul li {
+      display: inline-block;
+      padding-left: 15px;
+      margin: 0px 10px;
+      position: relative;
+      color: #dcfeff;
+      font-family: "myriad-pro", 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      padding-top: 33px; }
+      body footer ul li:before {
+        content: "";
+        height: 4px;
+        width: 4px;
+        background: #dcfeff;
+        border-radius: 2px;
+        position: absolute;
+        left: -7px;
+        top: 47px; }
+      body footer ul li:first-child:before {
+        content: none; }
