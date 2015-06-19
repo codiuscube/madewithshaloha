@@ -102,6 +102,11 @@ body {
       max-width: 480px;
       display: block;
       margin: 100px auto; }
+  body .instagram {
+    height: 200px;
+    background: #151515; }
+    body .instagram .col-sm-4 {
+      background: red; }
   body .content {
     background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
     background-size: contain;

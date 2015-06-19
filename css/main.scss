@@ -126,7 +126,14 @@ body {
 		}
 	}
 
-
+		.instagram {
+			height: 200px;
+			background: $dark-grey;
+			
+			.col-sm-4 {
+				background: red;
+			}
+		}
 
 	.content {
 		background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
