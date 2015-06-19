@@ -27,7 +27,6 @@ a:visited {
 	}
 a:hover {
 	text-decoration: none;
-	background: rgba($green,.9); 
 	}
 
 body {
@@ -70,7 +69,6 @@ body {
 
 				}
 			a.donate-text {
-				background: none;
 				color: $dark-grey;
 				font-family: "myriad-pro", 'Roboto', sans-serif;
 				font-weight: 700;
@@ -78,12 +76,16 @@ body {
 				padding-top: 35px;
 				float: right; 
 				-webkit-font-smoothing: antialiased;
+			
+				&:hover {
+					background: transparent url("/img/greenshape.svg") center bottom no-repeat;
+					overflow: visible;
+				}
 			}
-
 		}
 	}
 
-	.donate {
+.donate {
 		background: $green;
 		padding: 20px 20px;
 		border-radius: 8px;
@@ -97,7 +99,6 @@ body {
 		font-size: 16px;
 	}
 
-
 	.hero {
 		background: #6fde89; /* Old browsers */
 		background: -moz-linear-gradient(-45deg, #6fde89 0%, #62c479 100%); /* FF3.6+ */
@@ -108,15 +109,14 @@ body {
 		background: linear-gradient(135deg, #6fde89 0%,#62c479 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		color: white;
-		.donate {
-			background: rgba($dark-grey,.05); }
-		a:link {
-    		text-decoration: none; }		
-		a:visited {
-    		text-decoration: none; }
-		a:hover {
-    		text-decoration: none;
+			
+			.donate {
+			background: rgba($dark-grey,.05);
+		}
+
+			a:hover {
     		background: rgba($dark-grey,.08); }
+    	}
 		
 		.shaka {
 			width: 90%;
@@ -124,21 +124,43 @@ body {
 			display: block;
 			margin: 100px auto;
 		}
-	}
 
-		.instagram {
-			height: 200px;
+	.instagram {
+
+		.image {
+			margin-top: 100px;
 			background: $dark-grey;
-			
-			.col-sm-4 {
-				background: red;
+			height: 264px;
+		
+			&:hover {
+				opacity: .90;
 			}
+		}
+
+
 		}
 
 	.content {
 		background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
   		background-size: contain;
   		padding-bottom: 400px;
+
+  		.about { 
+  			a:link {
+    		color: $green; }		
+			a:visited {
+    		color: $green; }
+			a:hover {
+    		color: rgba($green,.8); }
+
+    	}
+
+    		.donate { 
+  				&:hover {
+    			background: rgba($green,.8); }
+
+    		}
+
 		}
 
 
@@ -146,6 +168,15 @@ body {
 		background: $dark-grey;
 		height: 100px;
 		width: 100%;
+		a:link {
+		color: white;
+		}		
+		a:visited {
+		color: white;
+		}
+		a:hover {
+		background: rgba($green,.8); 
+		}
 		ul {
 			li {
 				display: inline-block;
@@ -154,7 +185,7 @@ body {
 				position: relative;
 				color: $light-blue;
 				font-family: "myriad-pro", 'Roboto', sans-serif;
-				font-weight: 700;
+				font-weight: 500;
 				font-size: 18px;
 				padding-top: 33px;
 				&:before {
