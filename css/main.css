@@ -97,15 +97,32 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
     color: white; }
-    body .hero .donate {
+    body .hero a:link {
+      color: white;
+      background: rgba(21, 21, 21, 0.05); }
+    body .hero a:visited {
+      color: white;
       background: rgba(21, 21, 21, 0.05); }
     body .hero a:hover {
+      color: white;
       background: rgba(21, 21, 21, 0.08); }
-  body .shaka {
-    width: 90%;
-    max-width: 480px;
-    display: block;
-    margin: 100px auto; }
+    body .hero .donate {
+      background: rgba(21, 21, 21, 0.05);
+      color: white; }
+      body .hero .donate:link {
+        color: white;
+        background: rgba(21, 21, 21, 0.05); }
+      body .hero .donate:visited {
+        color: white;
+        background: rgba(21, 21, 21, 0.05); }
+      body .hero .donate:hover {
+        color: white;
+        background: rgba(21, 21, 21, 0.08); }
+    body .hero .shaka {
+      width: 90%;
+      max-width: 480px;
+      display: block;
+      margin: 100px auto; }
   body #instagram-wrapper {
     position: relative;
     width: 100%;
@@ -122,11 +139,13 @@ body {
     background-size: 500%;
     padding-bottom: 400px; }
     body .content .about a:link {
-      color: #6fde89; }
+      color: #151515;
+      background: rgba(111, 222, 137, 0.2); }
     body .content .about a:visited {
-      color: #6fde89; }
+      color: #151515;
+      background: rgba(111, 222, 137, 0.2); }
     body .content .about a:hover {
-      color: rgba(111, 222, 137, 0.8); }
+      background: rgba(111, 222, 137, 0.4); }
     body .content .donate:hover {
       background: rgba(111, 222, 137, 0.8); }
   body footer {
@@ -134,11 +153,14 @@ body {
     height: 300px;
     width: 100%; }
     body footer a:link {
-      color: white; }
+      color: white;
+      background: rgba(111, 222, 137, 0.08); }
     body footer a:visited {
-      color: white; }
+      color: white;
+      background: rgba(111, 222, 137, 0.08); }
     body footer a:hover {
-      background: rgba(111, 222, 137, 0.8); }
+      color: white;
+      background: rgba(111, 222, 137, 0.5); }
     body footer ul li {
       color: #dcfeff;
       font-family: "myriad-pro", 'Roboto', sans-serif;
@@ -175,12 +197,6 @@ body {
     background: #151515;
     height: 200px !important;
     width: 100%; }
-    footer a:link {
-      color: white; }
-    footer a:visited {
-      color: white; }
-    footer a:hover {
-      background: rgba(111, 222, 137, 0.8); }
     footer ul li {
       display: inline-block;
       padding-left: 15px;

@@ -96,14 +96,29 @@ body {
 		background: linear-gradient(135deg, #6fde89 0%,#62c479 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		color: white;
+			a:link {
+				color: white;
+				background: rgba($dark-grey,.05); }	
+			a:visited {
+				color: white;
+				background: rgba($dark-grey,.05); }
+			a:hover {
+				color: white;
+				background: rgba($dark-grey,.08); }
 			
 			.donate {
 			background: rgba($dark-grey,.05);
-		}
-
-			a:hover {
-    		background: rgba($dark-grey,.08); }
-    	}
+			color: white;
+				&:link {
+    				color: white;
+    				background: rgba($dark-grey,.05); }	
+				&:visited {
+    				color: white;
+    				background: rgba($dark-grey,.05); }
+				&:hover {
+    				color: white;
+    				background: rgba($dark-grey,.08); }
+   				}
 		
 		.shaka {
 			width: 90%;
@@ -111,6 +126,7 @@ body {
 			display: block;
 			margin: 100px auto;
 		}
+	}
 
 
 /* Cody's Instagram
@@ -150,11 +166,14 @@ body {
 
   		.about { 
   			a:link {
-    		color: $green; }		
+    		color: $dark-grey;
+    		background: rgba($green,.2); }		
 			a:visited {
-    		color: $green; }
+    		color: $dark-grey;
+    		background: rgba($green,.2); }
 			a:hover {
-    		color: rgba($green,.8); }
+    		background: rgba($green,.4);
+    		}
 
     	}
 
@@ -172,14 +191,14 @@ body {
 		height: 300px;
 		width: 100%;
 		a:link {
-		color: white;
-		}		
-		a:visited {
-		color: white;
-		}
-		a:hover {
-		background: rgba($green,.8); 
-		}
+				color: white;
+				background: rgba($green,.08); }	
+			a:visited {
+				color: white;
+				background: rgba($green,.08); }
+			a:hover {
+				color: white;
+				background: rgba($green,.5); }
 		ul {
 			li {
 				color: $light-blue;
@@ -233,16 +252,6 @@ body {
 		background: $dark-grey;
 		height: 200px !important;
 		width: 100%;
-		
-			a:link {
-			color: white;
-			}		
-			a:visited {
-			color: white;
-			}
-			a:hover {
-			background: rgba($green,.8); 
-			}
 		
 			ul {
 				li {
