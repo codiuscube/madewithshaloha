@@ -27,7 +27,25 @@ body {
   background: #dcfeff;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  /* Cody's Instagram
+  
+  	.instagram {
+  
+  		.image {
+  			margin-top: 100px;
+  			background: $dark-grey;
+  			height: 264px;
+  		
+  			&:hover {
+  				opacity: .90;
+  			}
+  		}
+  
+  
+  		}
+  
+  */ }
   body h2 {
     font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
@@ -37,28 +55,18 @@ body {
   body .header-bar {
     height: 100px;
     width: 100%;
-    background: #dcfeff; }
+    background: #dcfeff;
+    padding: 33px 0px; }
     body .header-bar nav a.logo {
-      float: left;
       background: none;
       color: #6fde89;
       font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 18px;
-      padding-top: 33px;
       text-transform: uppercase;
       -webkit-font-smoothing: antialiased; }
-    body .header-bar nav a.donate-text {
-      color: #151515;
-      font-family: "myriad-pro", 'Roboto', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      padding-top: 35px;
-      float: right;
-      -webkit-font-smoothing: antialiased; }
-      body .header-bar nav a.donate-text:hover {
-        background: transparent url("/img/greenshape.svg") center bottom no-repeat;
-        overflow: visible; }
+    body .header-bar nav .donate-text {
+      display: none; }
   body .donate {
     background: #6fde89;
     padding: 20px 20px;
@@ -98,15 +106,20 @@ body {
     max-width: 480px;
     display: block;
     margin: 100px auto; }
-  body .instagram .image {
-    margin-top: 100px;
-    background: #151515;
-    height: 264px; }
-    body .instagram .image:hover {
-      opacity: .90; }
+  body #instagram-wrapper {
+    position: relative;
+    width: 100%;
+    /* overall width of the grid */
+    margin: 0 auto;
+    /* centers the grid */ }
+  body #instagram-wrapper img {
+    float: left;
+    /* removes the whitespace */
+    width: 20%;
+    /* 1/5 so you get 5 images per row */ }
   body .content {
     background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
-    background-size: contain;
+    background-size: 500%;
     padding-bottom: 400px; }
     body .content .about a:link {
       color: #6fde89; }
@@ -118,7 +131,7 @@ body {
       background: rgba(111, 222, 137, 0.8); }
   body footer {
     background: #151515;
-    height: 100px;
+    height: 300px;
     width: 100%; }
     body footer a:link {
       color: white; }
@@ -127,6 +140,48 @@ body {
     body footer a:hover {
       background: rgba(111, 222, 137, 0.8); }
     body footer ul li {
+      color: #dcfeff;
+      font-family: "myriad-pro", 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      padding-top: 33px;
+      list-style-type: none; }
+
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .header-bar a.logo {
+    float: left !important;
+    margin-left: 50px; }
+  .header-bar a.donate-text {
+    display: block !important;
+    color: #151515;
+    font-family: "myriad-pro", 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 2px;
+    margin-right: 50px;
+    float: right;
+    -webkit-font-smoothing: antialiased; }
+    .header-bar a.donate-text:hover {
+      background: transparent url("/img/greenshape.svg") center bottom no-repeat;
+      overflow: visible; }
+
+  .content {
+    background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
+    background-size: contain !important; }
+
+  footer {
+    background: #151515;
+    height: 200px !important;
+    width: 100%; }
+    footer a:link {
+      color: white; }
+    footer a:visited {
+      color: white; }
+    footer a:hover {
+      background: rgba(111, 222, 137, 0.8); }
+    footer ul li {
       display: inline-block;
       padding-left: 15px;
       margin: 0px 10px;
@@ -135,8 +190,9 @@ body {
       font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 500;
       font-size: 18px;
-      padding-top: 33px; }
-      body footer ul li:before {
+      padding-top: 33px;
+      right: 25px; }
+      footer ul li:before {
         content: "";
         height: 4px;
         width: 4px;
@@ -145,5 +201,5 @@ body {
         position: absolute;
         left: -7px;
         top: 47px; }
-      body footer ul li:first-child:before {
-        content: none; }
+      footer ul li:first-child:before {
+        content: none; } }

@@ -26,13 +26,39 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript">
+var count = 5;
+var clientID = "529dede105394ad79dd253e0ec0ac090";
+var tag = "deepcountry";
+
+var jsonpURL = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?client_id=" + clientID + "&callback=listImages&count=" + count;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = jsonpURL;
+var head = document.getElementsByTagName("head")[0];
+head.appendChild(script);
+
+function listImages(response) {
+  var i, item, len, images;
+  images = '';
+  if (response.data.length > 0) {
+    var entries = response.data;
+    var wrapper = document.getElementById('instagram-wrapper');
+    for (i = 0, len = entries.length; i < len; i++) {
+      item = entries[i];
+      images += '<img src="' + item.images.standard_resolution.url + '">';
+    }
+    wrapper.innerHTML = images;
+  }
+}
+</script>
     </head>
     <body>
         <div class="header-bar">
             <div class="container">
                 <header class="row">
                     <nav>
-                        <a class="logo" href="/">Shaloha</a>
+                        <a class="logo" href="/">#cultivateshaloha</a>
                         <a class="donate-text" href="#">Donate $30 to KUGA</a>
                     </nav>
                 </header>
@@ -50,34 +76,8 @@
                 </div>
             </div>
         </div>
+        <div id="instagram-wrapper"></div>
         <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="instagram">
-                        <div class="col-sm-3">
-                            <div class="image">
-                                <a href="http://instagram.com/codyandchelsea"> <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11282581_419126358272263_1681049138_n.jpg" width="264px" height="264px"> </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="image">
-                                <a href="http://instagram.com/codyandchelsea"> <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11282581_419126358272263_1681049138_n.jpg" width="264px" height="264px"> </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="image">
-                                <a href="http://instagram.com/codyandchelsea"> <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11282581_419126358272263_1681049138_n.jpg" width="264px" height="264px"> </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="image">
-                                <a href="http://instagram.com/codyandchelsea"> <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11282581_419126358272263_1681049138_n.jpg" width="264px" height="264px"> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="container">
                 <div class="row">
                      <div class="col-md-6 col-md-offset-3">
@@ -103,11 +103,14 @@
         <footer>
             <div class="container">    
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <ul>
                             <li>Design by<a href="http://instagram.com/codyandchelsea"> @codyandchelsea</a></li>
                             <li>Photo by<a href="http://instagram.com/brycejohnson"> @brycejohnson</a></li>
                             <li>Sponsored by<a href="http://instagram.com/digitaltelepathy"> @digitaltelepathy</a><a href="http://instagram.com/alohaexchange"> @alohaexchange</a></li>
+                        </ul>
+                        <ul>
+                            <li><img src="/img/kuga.png" height="40px"></li>
                         </ul>
                     </div>
                 </div>

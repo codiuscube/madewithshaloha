@@ -54,33 +54,20 @@ body {
 		height: 100px;
 		width: 100%;
 		background: $light-blue;
+		padding: 33px 0px;
 
 		nav {
 			a.logo {
-				float: left;  
 				background: none;
 				color: $green;
 				font-family: "myriad-pro", 'Roboto', sans-serif;
 				font-weight: 700;
 				font-size: 18px;
-				padding-top: 33px;
 				text-transform: uppercase;
 				-webkit-font-smoothing: antialiased;
-
 				}
-			a.donate-text {
-				color: $dark-grey;
-				font-family: "myriad-pro", 'Roboto', sans-serif;
-				font-weight: 700;
-				font-size: 16px;
-				padding-top: 35px;
-				float: right; 
-				-webkit-font-smoothing: antialiased;
-			
-				&:hover {
-					background: transparent url("/img/greenshape.svg") center bottom no-repeat;
-					overflow: visible;
-				}
+			.donate-text {
+				display: none;
 			}
 		}
 	}
@@ -125,6 +112,9 @@ body {
 			margin: 100px auto;
 		}
 
+
+/* Cody's Instagram
+
 	.instagram {
 
 		.image {
@@ -140,9 +130,22 @@ body {
 
 		}
 
+*/
+
+	#instagram-wrapper {
+		position: relative;
+		width: 100%; /* overall width of the grid */
+		margin: 0 auto; /* centers the grid */
+	}
+	
+	#instagram-wrapper img {
+		float: left; /* removes the whitespace */
+		width: 20%; /* 1/5 so you get 5 images per row */
+	}
+
 	.content {
 		background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
-  		background-size: contain;
+  		background-size: 500%;
   		padding-bottom: 400px;
 
   		.about { 
@@ -166,7 +169,7 @@ body {
 
 	footer {
 		background: $dark-grey;
-		height: 100px;
+		height: 300px;
 		width: 100%;
 		a:link {
 		color: white;
@@ -179,49 +182,99 @@ body {
 		}
 		ul {
 			li {
-				display: inline-block;
-				padding-left: 15px;
-				margin: 0px 10px;
-				position: relative;
 				color: $light-blue;
 				font-family: "myriad-pro", 'Roboto', sans-serif;
 				font-weight: 500;
 				font-size: 18px;
+				line-height: 1.5;
 				padding-top: 33px;
-				&:before {
-					content: "";
-					height: 4px;
-					width: 4px;
-					background: $light-blue;
-					border-radius: 2px;
-					position: absolute;
-					left: -7px;
-					top: 47px;
-				}
-				&:first-child {
-					&:before {
-						content: none;
-						
+				list-style-type: none;
 					}
 				}
-				
+			}
+		}
+	
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) { 
+
+	.header-bar {
+			a.logo {
+			float: left !important;  
+			margin-left: 50px;
+			}
+
+			a.donate-text {
+				display: block !important;
+				color: $dark-grey;
+				font-family: "myriad-pro", 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 16px;
+				padding-top: 2px;
+				margin-right: 50px;
+				float: right; 
+				-webkit-font-smoothing: antialiased;
+
+			&:hover {
+				background: transparent url("/img/greenshape.svg") center bottom no-repeat;
+				overflow: visible;
 			}
 		}
 	}
-		
 
-
-
-
-
-
-
-
-
-
-
+	.content {
+		background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
+  		background-size: contain !important;
 }
 
+	footer {
+		background: $dark-grey;
+		height: 200px !important;
+		width: 100%;
+		
+			a:link {
+			color: white;
+			}		
+			a:visited {
+			color: white;
+			}
+			a:hover {
+			background: rgba($green,.8); 
+			}
+		
+			ul {
+				li {
+					display: inline-block;
+					padding-left: 15px;
+					margin: 0px 10px;
+					position: relative;
+					color: $light-blue;
+					font-family: "myriad-pro", 'Roboto', sans-serif;
+					font-weight: 500;
+					font-size: 18px;
+					padding-top: 33px;
+					right: 25px;
+					&:before {
+						content: "";
+						height: 4px;
+						width: 4px;
+						background: $light-blue;
+						border-radius: 2px;
+						position: absolute;
+						left: -7px;
+						top: 47px;
+					}
+					&:first-child {
+						&:before {
+							content: none;
+						}
+				}
+			}
+		}
+	}
+}
 
 
 
