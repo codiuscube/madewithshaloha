@@ -135,7 +135,7 @@ body {
     width: 20%;
     /* 1/5 so you get 5 images per row */ }
   body .content {
-    background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
+    background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
     background-size: 200%;
     padding-bottom: 400px; }
     body .content .about a:link {
@@ -186,11 +186,11 @@ body {
     float: right;
     -webkit-font-smoothing: antialiased; }
     .header-bar a.donate-text:hover {
-      background: transparent url("/img/greenshape.svg") center bottom no-repeat;
+      background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat;
       overflow: visible; }
 
   .content {
-    background: transparent url("/img/johnson-shaloha.jpg") bottom center no-repeat;
+    background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
     background-size: contain !important; }
 
   footer {
