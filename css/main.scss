@@ -1,37 +1,18 @@
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	/* ==========================================================================
+	   Author's custom styles
+	   ========================================================================== */
 
-html {
-	-webkit-font-smoothing: antialiased;
-}
+	html {
+		-webkit-font-smoothing: antialiased;
+	}
 
 /* COLOR VARIABLES */
+
 $green: #6fde89;
 $dark-grey: #151515;
 $light-blue: #dcfeff;
-
-/* MEDIA QUERIES
-@media (min-width: @screen-sm-min) {
-	.header-bar {
-		height: 0px;
-	}
-} */
-
-
-
-/* TYPOGRAPHY */
-a:link {
-	text-decoration: none;
-	}
-a:visited {
-	text-decoration: none;
-	}
-a:hover {
-	text-decoration: none;
-	}
 
 body {
 	font-size: 20px;
@@ -42,91 +23,110 @@ body {
 	background: $light-blue;
 	text-align: center;
 	padding-bottom: 0px;
+}
+
+/* TYPOGRAPHY */
+a {
+	text-decoration: none;
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h2 {
+	font-family: "myriad-pro", 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 100px;
+}
 
 
-	h2 {
+.header-bar {
+	height: 100px;
+	/*width: 100%;*/
+	background: $light-blue;
+	padding: 33px 0px;
+
+	nav {
+		a.logo {
+			background: none;
+			color: $green;
 			font-family: "myriad-pro", 'Roboto', sans-serif;
 			font-weight: 700;
 			font-size: 18px;
-			margin-top: 100px;
-		}
-
-
-	.header-bar {
-		height: 100px;
-		/*width: 100%;*/
-		background: $light-blue;
-		padding: 33px 0px;
-
-		nav {
-			a.logo {
-				background: none;
-				color: $green;
-				font-family: "myriad-pro", 'Roboto', sans-serif;
-				font-weight: 700;
-				font-size: 18px;
-				text-transform: uppercase;
-				}
-			.donate-text {
-				display: none;
+			text-transform: uppercase;
 			}
+		.donate-text {
+			display: none;
 		}
 	}
+}
 
 .donate {
-		background: $green;
-		padding: 20px 20px;
-		border-radius: 8px;
-		margin: 50px auto 100px auto;
-		display: block;
-		width: 300px;
-		font-family: "myriad-pro", 'Roboto', sans-serif;
-		font-weight: 700;
-		color: white;
-		font-size: 16px;
-	}
+	background: $green;
+	padding: 20px 20px;
+	border-radius: 8px;
+	margin: 50px auto 100px auto;
+	display: block;
+	width: 300px;
+	font-family: "myriad-pro", 'Roboto', sans-serif;
+	font-weight: 700;
+	color: white;
+	font-size: 16px;
+}
 
-	.hero {
-		background: #6fde89; /* Old browsers */
-		background: -moz-linear-gradient(-45deg, #6fde89 0%, #62c479 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#6fde89), color-stop(100%,#62c479)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* IE10+ */
-		background: linear-gradient(135deg, #6fde89 0%,#62c479 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		color: white;
-			a:link {
-				color: white;
-				background: rgba($dark-grey,.05); }
-			a:visited {
-				color: white;
-				background: rgba($dark-grey,.05); }
-			a:hover {
-				color: white;
-				background: rgba($dark-grey,.08); }
+.hero {
+	background: #6fde89; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #6fde89 0%, #62c479 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#6fde89), color-stop(100%,#62c479)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #6fde89 0%,#62c479 100%); /* IE10+ */
+	background: linear-gradient(135deg, #6fde89 0%,#62c479 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fde89', endColorstr='#62c479',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
 
-			.donate {
-			background: rgba($dark-grey,.05);
+	a {
+		color: white;
+		background: rgba($dark-grey,.05);
+
+		&:visited {
 			color: white;
-				&:link {
-    				color: white;
-    				background: rgba($dark-grey,.05); }
-				&:visited {
-    				color: white;
-    				background: rgba($dark-grey,.05); }
-				&:hover {
-    				color: white;
-    				background: rgba($dark-grey,.08); }
-   				}
-
-		.shaka {
-			width: 90%;
-			max-width: 480px;
-			display: block;
-			margin: 100px auto;
+			background: rgba($dark-grey,.05);
+		}
+		&:hover {
+			color: white;
+			background: rgba($dark-grey,.08);
 		}
 	}
+
+	.donate {
+		background: rgba($dark-grey,.05);
+		color: white;
+
+		a {
+			color: white;
+			background: rgba($dark-grey,.05);
+
+			&:visited {
+				color: white;
+				background: rgba($dark-grey,.05); }
+			&:hover {
+				color: white;
+				background: rgba($dark-grey,.08); }
+				}
+	}
+
+	.shaka {
+		width: 90%;
+		max-width: 480px;
+		display: block;
+		margin: 100px auto;
+	}
+}
 
 
 /* Cody's Instagram
@@ -142,98 +142,100 @@ body {
 				opacity: .90;
 			}
 		}
-
-
 		}
 
 */
 
-	#instagram-wrapper {
-		position: relative;
-		width: 100%; /* overall width of the grid */
-		margin: 0 auto; /* centers the grid */
+#instagram-wrapper {
+	position: relative;
+	width: 100%; /* overall width of the grid */
+	margin: 0 auto; /* centers the grid */
+}
+
+#instagram-wrapper img {
+	float: left; /* removes the whitespace */
+	width: 20%; /* 1/5 so you get 5 images per row */
+}
+
+.content {
+	background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
+	background-size: 200%;
+	padding-bottom: 400px;
+
+	.about {
+		a {
+  		color: $dark-grey;
+  		background: rgba($green,.2);
+  	}
+		a:visited {
+  		color: $dark-grey;
+  		background: rgba($green,.2);
+  	}
+		a:hover {
+  		background: rgba($green,.4);
+		}
 	}
 
-	#instagram-wrapper img {
-		float: left; /* removes the whitespace */
-		width: 20%; /* 1/5 so you get 5 images per row */
+	.donate {
+		&:hover {
+			background: rgba($green,.8); }
+
 	}
 
-	.content {
-		background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
-  		background-size: 200%;
-  		padding-bottom: 400px;
+}
 
-  		.about {
-  			a:link {
-    		color: $dark-grey;
-    		background: rgba($green,.2); }
-			a:visited {
-    		color: $dark-grey;
-    		background: rgba($green,.2); }
-			a:hover {
-    		background: rgba($green,.4);
-    		}
 
-    	}
+footer {
+	background: $dark-grey;
+	height: 300px;
+	width: 100%;
+	a {
+		color: white;
+		background: rgba($green,.08);
+	}
+	&:visited {
+		color: white;
+		background: rgba($green,.08);
+	}
+	&:hover {
+		color: white;
+		background: rgba($green,.5);
+	}
 
-    		.donate {
-  				&:hover {
-    			background: rgba($green,.8); }
-
-    		}
-
+	ul {
+		li {
+			color: $light-blue;
+			font-family: "myriad-pro", 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.5;
+			padding-top: 33px;
+			list-style-type: none;
 		}
-
-
-	footer {
-		background: $dark-grey;
-		height: 300px;
-		width: 100%;
-		a:link {
-				color: white;
-				background: rgba($green,.08); }
-			a:visited {
-				color: white;
-				background: rgba($green,.08); }
-			a:hover {
-				color: white;
-				background: rgba($green,.5); }
-		ul {
-			li {
-				color: $light-blue;
-				font-family: "myriad-pro", 'Roboto', sans-serif;
-				font-weight: 500;
-				font-size: 18px;
-				line-height: 1.5;
-				padding-top: 33px;
-				list-style-type: none;
-					}
-				}
-			}
-		}
+	}
+}
 
 
 
-/* MEDIA QUERIES */
+	/* MEDIA QUERIES */
 
 @media (min-width: 992px) {
 
 	.header-bar {
-			a.logo {
+		a.logo {
 			float: left; /* !important   */
 			margin-left: 50px;
-			}
+		}
 
-			a.donate-text {
-				display: block; /* !important */
-				color: $dark-grey;
-				font-family: "myriad-pro", 'Roboto', sans-serif;
-				font-weight: 700;
-				font-size: 16px;
-				padding-top: 2px;
-				margin-right: 50px;
-				float: right;
+		a.donate-text {
+			display: block; /* !important */
+			color: $dark-grey;
+			font-family: "myriad-pro", 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			padding-top: 2px;
+			margin-right: 50px;
+			float: right;
 
 			&:hover {
 				background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat;
@@ -252,37 +254,38 @@ body {
 		height: 200px; /* !important */
 		width: 100%;
 
-			ul {
-				li {
-					display: inline-block;
-					padding-left: 15px;
-					margin: 0px 10px;
-					position: relative;
-					color: $light-blue;
-					font-family: "myriad-pro", 'Roboto', sans-serif;
-					font-weight: 500;
-					font-size: 18px;
-					padding-top: 33px;
-					right: 25px;
+		ul {
+			li {
+				display: inline-block;
+				padding-left: 15px;
+				margin: 0px 10px;
+				position: relative;
+				color: $light-blue;
+				font-family: "myriad-pro", 'Roboto', sans-serif;
+				font-weight: 500;
+				font-size: 18px;
+				padding-top: 33px;
+				right: 25px;
+				&:before {
+					content: "";
+					height: 4px;
+					width: 4px;
+					background: $light-blue;
+					border-radius: 2px;
+					position: absolute;
+					left: -7px;
+					top: 47px;
+				}
+				&:first-child {
 					&:before {
-						content: "";
-						height: 4px;
-						width: 4px;
-						background: $light-blue;
-						border-radius: 2px;
-						position: absolute;
-						left: -7px;
-						top: 47px;
+						content: none;
 					}
-					&:first-child {
-						&:before {
-							content: none;
-						}
 				}
 			}
 		}
 	}
-}
+
+} // End MQ 992px
 
 
 
