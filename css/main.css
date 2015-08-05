@@ -103,18 +103,18 @@ h2 {
 
 /* Cody's Instagram
 
-	.instagram {
+  .instagram {
 
-		.image {
-			margin-top: 100px;
-			background: $dark-grey;
-			height: 264px;
+    .image {
+      margin-top: 100px;
+      background: $dark-grey;
+      height: 264px;
 
-			&:hover {
-				opacity: .90;
-			}
-		}
-		}
+      &:hover {
+        opacity: .90;
+      }
+    }
+    }
 
 */
 #instagram-wrapper {
