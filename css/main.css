@@ -1,8 +1,11 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  -webkit-font-smoothing: antialiased; }
+
 /* COLOR VARIABLES */
-/* MEDIA QUERIES 
+/* MEDIA QUERIES
 @media (min-width: @screen-sm-min) {
 	.header-bar {
 		height: 0px;
@@ -26,7 +29,6 @@ body {
   font-weight: "600";
   background: #dcfeff;
   text-align: center;
-  -webkit-font-smoothing: antialiased;
   padding-bottom: 0px;
   /* Cody's Instagram
   
@@ -36,7 +38,7 @@ body {
   			margin-top: 100px;
   			background: $dark-grey;
   			height: 264px;
-  		
+  
   			&:hover {
   				opacity: .90;
   			}
@@ -50,11 +52,10 @@ body {
     font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin-top: 100px;
-    -webkit-font-smoothing: antialiased; }
+    margin-top: 100px; }
   body .header-bar {
     height: 100px;
-    width: 100%;
+    /*width: 100%;*/
     background: #dcfeff;
     padding: 33px 0px; }
     body .header-bar nav a.logo {
@@ -63,8 +64,7 @@ body {
       font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 18px;
-      text-transform: uppercase;
-      -webkit-font-smoothing: antialiased; }
+      text-transform: uppercase; }
     body .header-bar nav .donate-text {
       display: none; }
   body .donate {
@@ -76,7 +76,6 @@ body {
     width: 300px;
     font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
-    -webkit-font-smoothing: antialiased;
     color: white;
     font-size: 16px; }
   body .hero {
@@ -173,29 +172,32 @@ body {
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
   .header-bar a.logo {
-    float: left !important;
+    float: left;
+    /* !important   */
     margin-left: 50px; }
   .header-bar a.donate-text {
-    display: block !important;
+    display: block;
+    /* !important */
     color: #151515;
     font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     padding-top: 2px;
     margin-right: 50px;
-    float: right;
-    -webkit-font-smoothing: antialiased; }
+    float: right; }
     .header-bar a.donate-text:hover {
       background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat;
       overflow: visible; }
 
   .content {
     background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
-    background-size: contain !important; }
+    background-size: contain;
+    /* !important */ }
 
   footer {
     background: #151515;
-    height: 200px !important;
+    height: 200px;
+    /* !important */
     width: 100%; }
     footer ul li {
       display: inline-block;
