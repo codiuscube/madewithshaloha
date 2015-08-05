@@ -128,7 +128,6 @@ h2 {
   }
 }
 
-
 /* Cody's Instagram
 
   .instagram {
@@ -187,22 +186,23 @@ h2 {
 
 footer {
   background: $dark-grey;
-  height: 300px;
+  padding-bottom: 50px;
   width: 100%;
   a {
     color: white;
     background: rgba($green,.08);
-  }
-  &:visited {
-    color: white;
-    background: rgba($green,.08);
-  }
-  &:hover {
-    color: white;
-    background: rgba($green,.5);
+    &:visited {
+      color: white;
+      background: rgba($green,.08);
+    }
+    &:hover {
+      color: white;
+      background: rgba($green,.5);
+    }
   }
 
   ul {
+    padding-left: 0;
     li {
       color: $light-blue;
       font-family: "myriad-pro", 'Roboto', sans-serif;
@@ -213,11 +213,12 @@ footer {
       list-style-type: none;
     }
   }
+  img {
+    text-align: center;
+  }
 }
 
-
-
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 @media (min-width: 992px) {
 
@@ -233,25 +234,26 @@ footer {
       font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 16px;
-      padding-top: 2px;
+      line-height: 45px;
       margin-right: 50px;
       float: right;
+      width: 153px;
+      height: 42px;
 
       &:hover {
         background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat;
-        overflow: visible;
       }
     }
   }
 
   .content {
     background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
-      background-size: contain; /* !important */
-}
+    background-size: contain; /* !important */
+  }
 
   footer {
     background: $dark-grey;
-    height: 200px; /* !important */
+    // height: 200px; /* !important */
     width: 100%;
 
     ul {

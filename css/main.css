@@ -147,25 +147,29 @@ h2 {
 
 footer {
   background: #151515;
-  height: 300px;
+  padding-bottom: 50px;
   width: 100%; }
   footer a {
     color: white;
     background: rgba(111, 222, 137, 0.08); }
-  footer:visited {
-    color: white;
-    background: rgba(111, 222, 137, 0.08); }
-  footer:hover {
-    color: white;
-    background: rgba(111, 222, 137, 0.5); }
-  footer ul li {
-    color: #dcfeff;
-    font-family: "myriad-pro", 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
-    padding-top: 33px;
-    list-style-type: none; }
+    footer a:visited {
+      color: white;
+      background: rgba(111, 222, 137, 0.08); }
+    footer a:hover {
+      color: white;
+      background: rgba(111, 222, 137, 0.5); }
+  footer ul {
+    padding-left: 0; }
+    footer ul li {
+      color: #dcfeff;
+      font-family: "myriad-pro", 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      padding-top: 33px;
+      list-style-type: none; }
+  footer img {
+    text-align: center; }
 
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
@@ -180,12 +184,13 @@ footer {
     font-family: "myriad-pro", 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    padding-top: 2px;
+    line-height: 45px;
     margin-right: 50px;
-    float: right; }
+    float: right;
+    width: 153px;
+    height: 42px; }
     .header-bar a.donate-text:hover {
-      background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat;
-      overflow: visible; }
+      background: transparent url("https://s3.amazonaws.com/shaloha/greenshape.svg") center bottom no-repeat; }
 
   .content {
     background: transparent url("https://s3.amazonaws.com/shaloha/johnson-shaloha.jpg") bottom center no-repeat;
@@ -194,8 +199,6 @@ footer {
 
   footer {
     background: #151515;
-    height: 200px;
-    /* !important */
     width: 100%; }
     footer ul li {
       display: inline-block;
