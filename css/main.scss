@@ -183,6 +183,11 @@ h2 {
 
 }
 
+.item {
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+
 
 footer {
   background: $dark-grey;
@@ -229,7 +234,7 @@ footer {
     }
 
     a.donate-text {
-      display: block; /* !important */
+      display: inline-block; /* !important */
       color: $dark-grey;
       font-family: "myriad-pro", 'Roboto', sans-serif;
       font-weight: 700;

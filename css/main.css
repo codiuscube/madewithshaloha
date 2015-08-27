@@ -145,6 +145,10 @@ h2 {
   .content .donate:hover {
     background: rgba(111, 222, 137, 0.8); }
 
+.item {
+  margin-top: 20px;
+  padding-bottom: 80px; }
+
 footer {
   background: #151515;
   padding-bottom: 50px;
@@ -178,7 +182,7 @@ footer {
     /* !important   */
     margin-left: 50px; }
   .header-bar a.donate-text {
-    display: block;
+    display: inline-block;
     /* !important */
     color: #151515;
     font-family: "myriad-pro", 'Roboto', sans-serif;
